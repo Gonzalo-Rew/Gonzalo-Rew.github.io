@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Gonzalo Calvo Engelmo</title> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+        <script src="script.js"></script> 
+        <!--Solo con boostraps no he podido poner estilo a los botones cuando el ratón esté encima
+        para eso he usado este pequeño css-->
+        <style>
+            .nav-link:hover {
+                background-color: #198754; 
+                color: white !important; 
+                transition: all 0.3s ease; 
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container-fluid vh-100">
+            <div class="row h-100">
+                <!-- Columna izquierda -->
+                <div class="col-md-4 bg-success text-white text-center d-flex flex-column align-items-center justify-content-center position-fixed" style="top: 0; left: 0; height: 100vh; width: 33.33%;">
+                    <img src="imagenes/fotoPerfil.PNG" class="rounded-circle border border-light w-50 mb-3" alt="Gonzalo Calvo Engelmo">
+                    <h2>Gonzalo Calvo Engelmo</h2>
+                    <p>Estudiante de Desarrollo de Aplicaciones Multiplataforma</p>
+                    <p>Madrid, España</p>
+                    <div class="d-flex justify-content-center gap-3 mb-3">
+                        <a href="https://www.linkedin.com/in/gonzalo-calvo-engelmo-4a37121bb/" class="text-white"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:engelmogonzalo@gmail.com" class="text-white"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/Gonzalo-Rew" class="text-white"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="mt-3 bg-light text-success p-2 rounded">Responsable y dedicado con mi trabajo</p>
+                </div>
+    
+                <!-- Columna derecha -->
+                <div class="col-md-8 offset-md-4 overflow-auto">
+                    <div class="container my-5">
+                        <ul class="nav nav-tabs bg-white text-dark mb-3 p-2 rounded d-flex justify-content-center">
+                            <li class="nav-item">
+                                <button class="nav-link btn text-success border border-success rounded-pill shadow-sm px-4" onclick="mostrarContenido('sobreMi')">Sobre mí</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn text-success border border-success rounded-pill shadow-sm px-4" onclick="mostrarContenido('estudios')">Estudios</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn text-success border border-success rounded-pill shadow-sm px-4" onclick="mostrarContenido('experiencia')">Experiencia</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link btn text-success border border-success rounded-pill shadow-sm px-4" onclick="mostrarContenido('contacto')">Contacto</button>
+                            </li>
+                        </ul>
+                    
+                        <div id="contenido">
+                            <h4>Sobre mí</h4>
+                            <p>¡Hola! Soy Gonzalo Calvo Engelmo. Soy una persona responsable, competitiva y dedicada. Tengo gran capacidad de liderazgo y de oratoria, así como curiosidad, que me provoca interés por aprender cosas nuevas.</p>
+                            <p>Me gusta mucho la tecnología y la programación, y tengo experiencia en el desarrollo de aplicaciones multiplataforma. Me encanta aprender cosas nuevas y mejorar mis habilidades constantemente.</p>
+                            <p>En mi tiempo libre, disfruto del deporte y la música.</p>
+                            <p>Si quieres saber más sobre mí, no dudes en contactarme. Estoy siempre abierto a nuevas oportunidades.</p>
+                        </div>
+    
+                        <h3 class="mt-5 mb-4">Highlights</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card border-success">
+                                    <div class="card-body">
+                                        <span class="badge bg-warning text-dark mb-2">Vídeos de programación</span>
+                                        <h5 class="card-title text-success">Videos explicativos sobre Java</h5>
+                                        <p class="card-text">Este año 2025, he realizado algunos videos explicativos sobre programación en Java para ayudar a mis compañeros de clase a comprender mejor los conceptos clave.</p>
+                                        
+                                        <div class="mt-3">
+                                            <img src="imagenes/programa.PNG" class="img-fluid rounded" alt="Captura de programa Java">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-success">
+                                    <div class="card-body">
+                                        <span class="badge bg-info text-dark mb-2">Discurso de graduación</span>
+                                        <h5 class="card-title text-success">Discurso SMR 2024</h5>
+                                        <p class="card-text">Al terminar el grado medio en Sistemas Microinformáticos y Redes, tuve la oportunidad de representar a mis compañeros con una pequeña ponencia durante la graduación.</p>
+                        
+                                        <div class="text-center mt-3">
+                                            <a href="https://youtu.be/a6icgFQdrVg" target="_blank" class="btn btn-success">
+                                                Ver video completo en YouTube
+                                            </a>
+                                        </div>
+
+                                        <div class="mt-3">
+                                            <img src="imagenes/discurso.PNG" class="img-fluid rounded" alt="Discurso de graduación">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
